@@ -1,0 +1,156 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300|Roboto+Mono);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+// Our variables
+$base-font-family: "Roboto", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #2a7ae2;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$on-palm:          600px;
+$on-laptop:        800px;
+
+body {
+  font-family: "Roboto";
+  color: white;
+}
+p,h1,h2,h3,h4,h5,h6 {
+  font-family: "Roboto";
+}
+
+.subtitle-text {
+  font-size: 2em;
+}
+
+.title-text {
+  font-size: 6em;
+}
+
+.small-title-text {
+  font-size: 4em;
+}
+
+.black {
+  color: #303030;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.italic {
+  font-style: italic;
+  font-size: 1em
+}
+
+.grey {
+  color: #D8D8D8;
+}
+
+.header {
+height: 135px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.full-width {
+  width: 100vw;
+}
+
+.half-width {
+  width: 50vw;
+}
+
+.hidden {
+  display: none;
+}
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base/base",
+        "tools/reset",
+        "modules/hero",
+        "modules/player",
+        "modules/volume",
+        "modules/social-about"
+;

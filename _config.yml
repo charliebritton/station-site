@@ -1,0 +1,37 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: CHILLDNB
+email: contact@chilldnb.com
+description: > # Put a description of your site below.
+  CHILLDNB is the number one place for you to listen to DNB and chillstep hits.
+
+# The base URL for your site e.g. /radio or /chilldnb if you want multiple
+# stations on one site.
+baseurl: ""
+url: "http://chilldnb.com" # The base website e.g. http://chilldnb.com
+
+# Social Settings
+# Set to none if you do not have/want to use.
+facebook_page: ChillDnbRadio # The URL of your facebook page w/o slashes.
+twitter_username: ChillDnbRadio # The twitter username w/o the @.
+instagram_username: ChillDnbRadio # The instagram username.
+email: contact@chilldnb.com # Full email.
+phone: none # Either full or local e.g. 1-800 or 00 44 ...
+
+# Player settings
+streamurl: http://streaming.shoutcast.com/JustChillDnB?lang=en-GB%2cen-US%3bq%3d0.8%2cen%3bq%3d0.6
+uselastfm: true # Whether or not to update songs.
+apikey: # API key for last.fm to get album art and songs.
+
+# Whether or not to use custom cover art.
+customcover: 'true'
+
+
+# Build settings
+markdown: redcarpet

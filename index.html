@@ -1,0 +1,51 @@
+---
+layout: default
+---
+<div class="hero">
+  <div class="switcher" id="#swi"> <!-- Switches radio stations -->
+    <p id="dropdown" class="material-icons noselect pointer">menu</p><!-- Use js to change the content to arrow up -->
+    <p class="subtitle-text noselect pointer"> {{ site.title }}</p>
+  </div>
+  <div class="center-content">
+    <p class="subtitle-text">Welcome to</p>
+    <p class="title-text">{{ site.title }}.</p>
+  </div>
+  <p class="go-to-player subtitle-text noselect pointer" onclick="scrollTo(0, 803);">Go to player.</p><!-- add scroll & disappear when scrolled \/ fade -->
+</div>
+
+<div class="player-section" id="player">
+  <div class="header full-width">
+    <p class="small-title-text black bold">PLAYER</p>
+  </div>
+  <div class="player">
+    <div class="album-art-padding">
+      <img src="img/album-art.png" class="album-art">
+    </div>
+    <div class="player-right black"> <!-- The right hand section of the player -->
+
+      <div class="song-information">
+        <p class="subtitle-text black bold current-song">Current Song</p>
+        <p class="subtitle-text black"><!-- add song from api -->Titanium - Sia</p>
+      </div>
+      <div class="player-controls">
+        <i class="material-icons pointer noselect rewind" onclick="rewindAudio()">replay_30</i>
+        <i class="material-icons pointer noselect play" onclick="playAudio()">play_arrow</i>
+        <i class="material-icons pointer noselect pause hidden" onclick="pauseAudio">pause</i>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<div class="social-about">
+  <div class="social">
+    <div class="header half-width z-9">
+      <p class="small-title-text bold">SOCIAL</p>
+    </div>
+  </div>
+  <div class="about">
+    <div class="header half-width z-9">
+      <p class="small-title-text bold black">ABOUT US</p>
+      <p class="about-text">hi</p>
+    </div>
+</div>
