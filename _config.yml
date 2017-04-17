@@ -1,22 +1,40 @@
-# Welcome to Jekyll!
+###############################################################################
+#         station-site - A static site for your online radio station.         #
+###############################################################################
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+#   This website will serve as a pretty, fast loading and responsive site for
+#   your listeners. Please read the LICENSE file to see what you can and cannot
+#   do with this website.
+#
+#   Site setup is relatively easy, with full documentation on the wiki for the
+#   repository.
 
-# Site settings
+# -----------------------------------------------------------------------------
+# DO NOT EDIT!
+version: 0.0.1
+author: Charlie Britton
+
+# -----------------------------------------------------------------------------
+# MAIN SETTINGS
+
+# The title of your station - e.g. CHILLDNB.
 title: CHILLDNB
-email: contact@chilldnb.com
-description: > # Put a description of your site below.
+
+# Site description - included in the meta and about sections.
+description: >
   CHILLDNB is the number one place for you to listen to DNB and chillstep hits.
 
-# The base URL for your site e.g. /radio or /chilldnb if you want multiple
-# stations on one site.
-baseurl: ""
-url: "http://chilldnb.com" # The base website e.g. http://chilldnb.com
+# Website URL - e.g. https://radionetwork.com
+url: "http://chilldnb.com"
 
-# Social Settings
+# Base site URL - e.g. https://radionetwork.com/this-bit-after-the-slash.
+baseurl: ""
+
+other-sites:
+  - 
+# -----------------------------------------------------------------------------
+# SOCIAL SETTINGS
+
 # Set to none if you do not have/want to use.
 facebook_page: ChillDnbRadio # The URL of your facebook page w/o slashes.
 twitter_username: ChillDnbRadio # The twitter username w/o the @.
